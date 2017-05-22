@@ -46,7 +46,7 @@ _requiredAddons = _requiredAddons arrayIntersect _requiredAddons;
 
 
 "ace_clipboard" callExtension format["class CfgPatches {%1",endl];
-"ace_clipboard" callExtension format["    class dorb_3rdPerson_Vehicles {%1",endl];
+"ace_clipboard" callExtension format["    class operation_kerberos_3rdperson_vehicles {%1",endl];
 
 "ace_clipboard" callExtension format["        units[] = {};%1",endl];
 "ace_clipboard" callExtension format["        weapons[] = {};%1",endl];

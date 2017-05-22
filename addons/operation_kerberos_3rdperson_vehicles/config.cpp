@@ -1,5 +1,8 @@
 class CfgPatches {
-    class dorb_3rdPerson_Vehicles {
+    class operation_kerberos_3rdperson {
+        version = 1;
+        versionStr = "1";
+        versionAr[] = {1};
         units[] = {};
         weapons[] = {};
         requiredVersion = 0.100000;
@@ -104,6 +107,16 @@ class CfgPatches {
     };
 };
 
+class CfgFunctions {
+    class operation_kerberos_3rdperson {
+        class vehicles {
+            class postInit {
+                file = "y\operation_kerberos_3rdperson\addons\vehicles\postInit.sqf";
+                postInit = 1;
+            };
+        };
+    };
+};
 
 class CfgVehicles {
     class LandVehicle;
@@ -981,10 +994,4 @@ class CfgVehicles {
     class BWA3_Leopard2A6M_Tropen : BWA3_Leopard_base {};
     class BWA3_Puma_Fleck : BWA3_Puma_base {};
     class BWA3_Puma_Tropen : BWA3_Puma_base {};
-};
-
-class Extended_PostInit_EventHandlers {
-    class dorb_3rdPerson_Man {
-        init = "dorb_viewrestriction_forcevehicle = false;";
-    };
 };

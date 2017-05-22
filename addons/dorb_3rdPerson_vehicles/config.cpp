@@ -982,3 +982,9 @@ class CfgVehicles {
     class BWA3_Puma_Fleck : BWA3_Puma_base {};
     class BWA3_Puma_Tropen : BWA3_Puma_base {};
 };
+
+class Extended_PostInit_EventHandlers {
+    class dorb_3rdPerson_Man {
+        init = "dorb_viewrestriction_forcevehicle = false;";
+    };
+};

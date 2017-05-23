@@ -1,5 +1,5 @@
 class CfgPatches {
-    class operation_kerberos_3rdperson {
+    class operation_kerberos_3rdperson_vehicles {
         version = 1;
         versionStr = "1";
         versionAr[] = {1};

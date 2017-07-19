@@ -1,5 +1,6 @@
+#include "script_component.hpp"
 class CfgPatches {
-    class operation_kerberos_3rdperson_vehicles {
+    class ADDON {
         version = 1;
         versionStr = "1";
         versionAr[] = {1};
@@ -107,16 +108,7 @@ class CfgPatches {
     };
 };
 
-class CfgFunctions {
-    class operation_kerberos_3rdperson {
-        class vehicles {
-            class postInit {
-                file = "y\operation_kerberos_3rdperson\addons\vehicles\postInit.sqf";
-                postInit = 1;
-            };
-        };
-    };
-};
+#include "CfgEventHandlers.hpp"
 
 class CfgVehicles {
     class LandVehicle;

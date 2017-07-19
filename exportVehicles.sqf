@@ -53,6 +53,7 @@ _requiredAddons = _requiredAddons arrayIntersect _requiredAddons;
 "ace_clipboard" callExtension format["        requiredVersion = 0.100000;%1",endl];
 
 "ace_clipboard" callExtension format["        requiredAddons[] = {%1",endl];
+"ace_clipboard" callExtension format["            ""kerb_main"",%1",endl];
 private _lastValue = _requiredAddons deleteAt (count _requiredAddons -1);
 {
     "ace_clipboard" callExtension format["            ""%1"",%2",_x,endl];
